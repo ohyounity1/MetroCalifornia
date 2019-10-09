@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    
+    <sys:String x:Key="HeaderIDMetroLineName">Line Name</sys:String>
+    <sys:String x:Key="HeaderIDMetroLineSign">Line Sign</sys:String>
+    <sys:String x:Key="HeaderIDMetroLineSourceStation">Source&#10;Station</sys:String>
+    <sys:String x:Key="HeaderIDMetroLineDestinationStation">Destination&#10;Station</sys:String>
+    <sys:String x:Key="HeaderIDMetroLineSaturdayService">Saturday&#10;Service?</sys:String>
+    <sys:String x:Key="HeaderIDMetroLineSundayHolidayService">Sunday&#10;Holiday&#10;Service?</sys:String>
+    <sys:String x:Key="HeaderIDYearOfOperation">Year&#10;Opened</sys:String>
+</ResourceDictionary>

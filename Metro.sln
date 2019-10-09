@@ -1,0 +1,151 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metro", "Metro\Metro.csproj", "{608D5231-D29C-4249-9AA2-0DCBD26AB680}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{8365D89D-8E57-4E1E-95AB-5DEE93AB007F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Data", "Framework\Framework.Data\Framework.Data\Framework.Data.csproj", "{1B1C2E45-0A4A-4F55-9F98-B73DCE43022B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{CC6FFCF7-18CE-4201-A22C-8739A943B39F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests.Model", "UnitTests\UnitTests\UnitTests.Model.csproj", "{FA57392A-0415-4E71-A8FE-A830C978B0C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Model", "Framework\Framework.Model\Framework.Model\Framework.Model.csproj", "{BC0C5A59-A7BC-4393-B260-B8F875AE724A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Patterns", "Framework\Framework.Patterns\Framework.Patterns\Framework.Patterns.csproj", "{E146FC55-F405-4AC2-912A-33847278F634}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.WPF", "Framework\Framework.WPF\Framework.WPF\Framework.WPF.csproj", "{B89F578F-D0C0-4034-B5E8-8973036600FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.State", "Framework\Framework.State\Framework.State\Framework.State.csproj", "{4E5EFEF0-4438-45AA-8F3E-02CEB93DDE3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{9E084153-0664-46D8-BF09-C00B7A780DD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metro.MetroLines", "Modules\Metro.MetroLines\Metro.MetroLines.csproj", "{4B8FDB92-0530-418B-83DC-C0271DBD181E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metro.MetroMap", "Modules\Metro.MetroMap\Metro.MetroMap.csproj", "{E74390D0-F5F9-4B6D-933E-2A1E21290E9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metro.MetroLink", "Modules\Metro.MetroLink\Metro.MetroLink\Metro.MetroLink.csproj", "{3C8CA8F7-C980-4A6F-908D-E10D4916C15D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Metro.Framework", "Metro.Framework", "{E15097F3-337E-4568-BB01-90DBCC83D037}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metro.Framework", "Metro.Framework\Metro.Framework\Metro.Framework.csproj", "{63696282-F609-4C1E-B0E6-22445E3E8FC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{608D5231-D29C-4249-9AA2-0DCBD26AB680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{608D5231-D29C-4249-9AA2-0DCBD26AB680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{608D5231-D29C-4249-9AA2-0DCBD26AB680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{608D5231-D29C-4249-9AA2-0DCBD26AB680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B1C2E45-0A4A-4F55-9F98-B73DCE43022B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B1C2E45-0A4A-4F55-9F98-B73DCE43022B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B1C2E45-0A4A-4F55-9F98-B73DCE43022B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B1C2E45-0A4A-4F55-9F98-B73DCE43022B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA57392A-0415-4E71-A8FE-A830C978B0C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA57392A-0415-4E71-A8FE-A830C978B0C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA57392A-0415-4E71-A8FE-A830C978B0C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA57392A-0415-4E71-A8FE-A830C978B0C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC0C5A59-A7BC-4393-B260-B8F875AE724A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC0C5A59-A7BC-4393-B260-B8F875AE724A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC0C5A59-A7BC-4393-B260-B8F875AE724A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC0C5A59-A7BC-4393-B260-B8F875AE724A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E146FC55-F405-4AC2-912A-33847278F634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E146FC55-F405-4AC2-912A-33847278F634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E146FC55-F405-4AC2-912A-33847278F634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E146FC55-F405-4AC2-912A-33847278F634}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B89F578F-D0C0-4034-B5E8-8973036600FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B89F578F-D0C0-4034-B5E8-8973036600FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B89F578F-D0C0-4034-B5E8-8973036600FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B89F578F-D0C0-4034-B5E8-8973036600FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E5EFEF0-4438-45AA-8F3E-02CEB93DDE3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E5EFEF0-4438-45AA-8F3E-02CEB93DDE3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E5EFEF0-4438-45AA-8F3E-02CEB93DDE3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E5EFEF0-4438-45AA-8F3E-02CEB93DDE3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B8FDB92-0530-418B-83DC-C0271DBD181E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B8FDB92-0530-418B-83DC-C0271DBD181E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B8FDB92-0530-418B-83DC-C0271DBD181E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B8FDB92-0530-418B-83DC-C0271DBD181E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E74390D0-F5F9-4B6D-933E-2A1E21290E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E74390D0-F5F9-4B6D-933E-2A1E21290E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E74390D0-F5F9-4B6D-933E-2A1E21290E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E74390D0-F5F9-4B6D-933E-2A1E21290E9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C8CA8F7-C980-4A6F-908D-E10D4916C15D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C8CA8F7-C980-4A6F-908D-E10D4916C15D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C8CA8F7-C980-4A6F-908D-E10D4916C15D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C8CA8F7-C980-4A6F-908D-E10D4916C15D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63696282-F609-4C1E-B0E6-22445E3E8FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63696282-F609-4C1E-B0E6-22445E3E8FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63696282-F609-4C1E-B0E6-22445E3E8FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63696282-F609-4C1E-B0E6-22445E3E8FC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1B1C2E45-0A4A-4F55-9F98-B73DCE43022B} = {8365D89D-8E57-4E1E-95AB-5DEE93AB007F}
+		{FA57392A-0415-4E71-A8FE-A830C978B0C1} = {CC6FFCF7-18CE-4201-A22C-8739A943B39F}
+		{BC0C5A59-A7BC-4393-B260-B8F875AE724A} = {8365D89D-8E57-4E1E-95AB-5DEE93AB007F}
+		{E146FC55-F405-4AC2-912A-33847278F634} = {8365D89D-8E57-4E1E-95AB-5DEE93AB007F}
+		{B89F578F-D0C0-4034-B5E8-8973036600FE} = {8365D89D-8E57-4E1E-95AB-5DEE93AB007F}
+		{4E5EFEF0-4438-45AA-8F3E-02CEB93DDE3F} = {8365D89D-8E57-4E1E-95AB-5DEE93AB007F}
+		{4B8FDB92-0530-418B-83DC-C0271DBD181E} = {9E084153-0664-46D8-BF09-C00B7A780DD7}
+		{E74390D0-F5F9-4B6D-933E-2A1E21290E9D} = {9E084153-0664-46D8-BF09-C00B7A780DD7}
+		{3C8CA8F7-C980-4A6F-908D-E10D4916C15D} = {9E084153-0664-46D8-BF09-C00B7A780DD7}
+		{63696282-F609-4C1E-B0E6-22445E3E8FC3} = {E15097F3-337E-4568-BB01-90DBCC83D037}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://dbcsw5:8080/tfs/dbcsw
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Framework\\Framework.Data\\Framework.Data\\Framework.Data.csproj
+		SccProjectTopLevelParentUniqueName1 = Metro.sln
+		SccProjectName1 = Framework/Framework.Data/Framework.Data
+		SccLocalPath1 = Framework\\Framework.Data\\Framework.Data
+		SccProjectUniqueName2 = Framework\\Framework.Model\\Framework.Model\\Framework.Model.csproj
+		SccProjectTopLevelParentUniqueName2 = Metro.sln
+		SccProjectName2 = Framework/Framework.Model/Framework.Model
+		SccLocalPath2 = Framework\\Framework.Model\\Framework.Model
+		SccProjectUniqueName3 = Framework\\Framework.Patterns\\Framework.Patterns\\Framework.Patterns.csproj
+		SccProjectTopLevelParentUniqueName3 = Metro.sln
+		SccProjectName3 = Framework/Framework.Patterns/Framework.Patterns
+		SccLocalPath3 = Framework\\Framework.Patterns\\Framework.Patterns
+		SccProjectUniqueName4 = Framework\\Framework.WPF\\Framework.WPF\\Framework.WPF.csproj
+		SccProjectTopLevelParentUniqueName4 = Metro.sln
+		SccProjectName4 = Framework/Framework.WPF/Framework.WPF
+		SccLocalPath4 = Framework\\Framework.WPF\\Framework.WPF
+		SccProjectUniqueName5 = Metro\\Metro.csproj
+		SccProjectName5 = Metro
+		SccLocalPath5 = Metro
+		SccProjectUniqueName6 = UnitTests\\UnitTests\\UnitTests.Model.csproj
+		SccProjectTopLevelParentUniqueName6 = Metro.sln
+		SccProjectName6 = UnitTests/UnitTests
+		SccLocalPath6 = UnitTests\\UnitTests
+		SccProjectUniqueName7 = Framework\\Framework.State\\Framework.State\\Framework.State.csproj
+		SccProjectTopLevelParentUniqueName7 = Metro.sln
+		SccProjectName7 = Framework/Framework.State/Framework.State
+		SccLocalPath7 = Framework\\Framework.State\\Framework.State
+		SccProjectUniqueName8 = Modules\\Metro.MetroLines\\Metro.MetroLines.csproj
+		SccProjectTopLevelParentUniqueName8 = Metro.sln
+		SccProjectName8 = Modules/Metro.MetroLines
+		SccLocalPath8 = Modules\\Metro.MetroLines
+		SccProjectUniqueName9 = Modules\\Metro.MetroMap\\Metro.MetroMap.csproj
+		SccProjectTopLevelParentUniqueName9 = Metro.sln
+		SccProjectName9 = Modules/Metro.MetroMap
+		SccLocalPath9 = Modules\\Metro.MetroMap
+		SccProjectUniqueName10 = Modules\\Metro.MetroLink\\Metro.MetroLink\\Metro.MetroLink.csproj
+		SccProjectTopLevelParentUniqueName10 = Metro.sln
+		SccProjectName10 = Modules/Metro.MetroLink/Metro.MetroLink
+		SccLocalPath10 = Modules\\Metro.MetroLink\\Metro.MetroLink
+		SccProjectUniqueName11 = Metro.Framework\\Metro.Framework\\Metro.Framework.csproj
+		SccProjectTopLevelParentUniqueName11 = Metro.sln
+		SccProjectName11 = Metro.Framework/Metro.Framework
+		SccLocalPath11 = Metro.Framework\\Metro.Framework
+	EndGlobalSection
+EndGlobal

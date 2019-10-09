@@ -1,0 +1,17 @@
+Name,LineColor,LineLetter,PrincipalDirection,ExpressService,SourceStation,DestinationStation,SaturdayService,SundayHolidayService,YearOfOperation
+"Long Beach Line",Blue,1,NorthSouth,false,"Long Beach - Ocean Ave","Montclair",true,true,1965
+"Castaic Pass Line",Red,2,NorthSouth,true,"Castaic Pass","DTLA - Santa Fe/Olympic Blvd",true,false,1972
+"Pacific Palisades Line",Purple,3,EastWest,false,"Pacific Palisades - Ocean Ave","Santa Fe Springs - Marquardt Ave",true,false,1972
+"Cal Poly Line",Silver,4,NorthSouth,false,"San Pedro - 36th/Pacific","Pomona - Cal Poly",true,true,1975
+"La Cañada Line",Orange,5,EastWest,false,"Santa Monica Pier","La Cañada Flintridge",true,true,1976
+"LAX Line Local",Green,6,EastWest,false,"LAX Terminal 9","DTLA - Union Station",true,true,1981
+"LAX Line Express",Green,6,EastWest,true,"LAX Terminal 9","DTLA - Union Station",false,false,1998
+"Bob Hope Line",Red,7,NorthSouth,false,"DTLA - Santa Fe/Olympic Blvd","Bob Hope Airport",true,true,1983
+"La Mirada Line",Green,8,EastWest,true,"Santa Monica","La Mirada - Telegraph Rd",true,false,1996
+"Rolling Hills Line",Silver,9,NorthSouth,false,"Rolling Hills Estates","Bob Hope Airport",true,false,1996
+"San Fernando Line",Silver,A,NorthSouth,true,"Rolling Hills Estates","San Fernando MetroLink",false,false,1999
+"South El Monte Line",Gold,B,EastWest,false,"Santa Monica","South El Monte",true,true,2001
+"Chatsworth - Pasadena Line",Brown,C,EastWest,false,"Pasadena Downtown","Chatsworth/Woodland Hiils",false,false,2006
+"Cypress Line",Yellow,D,NorthSouth,false,"Dodger Stadium","Cypress - Valley View Ave",true,true,2015
+"La Habra Line",Turquoise,E,EastWest,false,"Dodger Stadium","La Habra - Beach Blvd",true,true,2018
+"Circle Line",Beige,F,Circle,true,"null","null",false,false,2019

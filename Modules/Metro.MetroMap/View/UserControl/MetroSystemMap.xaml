@@ -1,0 +1,70 @@
+﻿<fwxuc:MetroUserControl x:Class="Modules.Metro.MetroMap.View.UserControl.MetroSystemMap"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Modules.Metro.MetroMap.View.UserControl"
+             xmlns:fwxuc="http://schemas.frameowrk_wpf.com/usercontrol"
+             xmlns:fwxco="http://schemas.frameowrk_wpf.com/converters/operations"
+             xmlns:fwxm="http://schemas.frameowrk_wpf.com/markup"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <fwxuc:MetroUserControl.Resources>
+        <fwxco:MultiplicationModificationConverter x:Key="MultiplyConverter"/>
+        <fwxco:AdditionDoubleMultiValueOperationConverter x:Key="SumTotalConverter" Invert="True"/>
+        <fwxco:AdditionDoubleModificationConverter x:Key="SumConverter"/>
+    </fwxuc:MetroUserControl.Resources>
+    <StackPanel>
+        <TextBlock Text="{StaticResource MetroSystemMap}" FontWeight="Bold" FontSize="16"/>
+        <Canvas Name="Map" Height="{x:Static SystemParameters.FullPrimaryScreenHeight}" Width="{x:Static SystemParameters.FullPrimaryScreenWidth}">
+            <TextBlock Name="CenterOfWorld" 
+                       Text="Union Station" FontWeight="Bold">
+                <Canvas.Left>
+                    <MultiBinding Converter="{StaticResource SumTotalConverter}">
+                        <Binding ElementName="Map" Path="Width" Converter="{StaticResource MultiplyConverter}" ConverterParameter="{fwxm:Double 0.5}"/>
+                        <Binding Path="ActualWidth" Converter="{StaticResource MultiplyConverter}" ConverterParameter="{fwxm:Double 0.5}" RelativeSource="{RelativeSource Self}"/>
+                    </MultiBinding>
+                </Canvas.Left>
+                <Canvas.Top>
+                    <MultiBinding Converter="{StaticResource SumTotalConverter}">
+                        <Binding ElementName="Map" Path="Height" Converter="{StaticResource MultiplyConverter}" ConverterParameter="{fwxm:Double 0.5}"/>
+                        <Binding Path="ActualHeight" Converter="{StaticResource MultiplyConverter}" ConverterParameter="{fwxm:Double 0.5}" RelativeSource="{RelativeSource Self}"/>
+                    </MultiBinding>
+                </Canvas.Top>
+            </TextBlock>
+            <TextBlock Name="Pasadena" 
+                       Canvas.Left="{Binding ElementName=CenterOfWorld, Path=(Canvas.Left)}"
+                       Canvas.Top="{Binding ElementName=CenterOfWorld, Path=(Canvas.Top), Converter={StaticResource SumConverter}, ConverterParameter={fwxm:Double -240}}"
+                       Text="Pasadena" FontWeight="Bold">
+            </TextBlock>
+            <TextBlock Name="Azusa" 
+                       Canvas.Left="{Binding ElementName=Pasadena, Path=(Canvas.Left), Converter={StaticResource SumConverter}, ConverterParameter={fwxm:Double 340}}"
+                       Canvas.Top="{Binding ElementName=Pasadena, Path=(Canvas.Top), Converter={StaticResource SumConverter}, ConverterParameter={fwxm:Double -100}}"
+                       Text="Asuza" FontWeight="Bold">
+            </TextBlock>
+            <TextBlock Name="OntarioAirport" 
+                       Canvas.Left="{Binding ElementName=Azusa, Path=(Canvas.Left), Converter={StaticResource SumConverter}, ConverterParameter={fwxm:Double 440}}"
+                       Canvas.Top="{Binding ElementName=Azusa, Path=(Canvas.Top)}"
+                       Text="Ontario Airport" FontWeight="Bold">
+            </TextBlock>
+            <TextBlock Name="LongBeach" 
+                       Canvas.Left="{Binding ElementName=CenterOfWorld, Path=(Canvas.Left)}"
+                       Canvas.Top="{Binding ElementName=CenterOfWorld, Path=(Canvas.Top), Converter={StaticResource SumConverter}, ConverterParameter={fwxm:Double 450}}"
+                       Text="Long Beach" FontWeight="Bold">
+            </TextBlock>
+            <Line X1="{Binding ElementName=LongBeach, Path=(Canvas.Left)}" Y1="{Binding ElementName=LongBeach, Path=(Canvas.Top)}" 
+                  X2="{Binding ElementName=Pasadena, Path=(Canvas.Left)}" Y2="{Binding ElementName=Pasadena, Path=(Canvas.Top)}"
+                  Stroke="Blue"
+                  StrokeThickness="7"/>
+            <Line X1="{Binding ElementName=Pasadena, Path=(Canvas.Left)}" Y1="{Binding ElementName=Pasadena, Path=(Canvas.Top)}" 
+                  X2="{Binding ElementName=Azusa, Path=(Canvas.Left)}" Y2="{Binding ElementName=Azusa, Path=(Canvas.Top)}"
+                  Stroke="Blue"
+                  StrokeThickness="7"/>
+            <Line X1="{Binding ElementName=Azusa, Path=(Canvas.Left)}" Y1="{Binding ElementName=Azusa, Path=(Canvas.Top)}" 
+                  X2="{Binding ElementName=OntarioAirport, Path=(Canvas.Left)}" Y2="{Binding ElementName=OntarioAirport, Path=(Canvas.Top)}"
+                  Stroke="Blue"
+                  StrokeThickness="7"/>
+        </Canvas>
+    </StackPanel>
+</fwxuc:MetroUserControl>

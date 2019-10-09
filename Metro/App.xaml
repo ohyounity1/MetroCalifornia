@@ -1,0 +1,15 @@
+﻿<prism:PrismApplication x:Class="Metro.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Metro"
+             xmlns:prism="http://prismlibrary.com/">
+    <prism:PrismApplication.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Metro.MetroLines;component/Resources/English/LineDetailStrings.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Metro.MetroMap;component/Resources/English/MetroSystemMapStrings.xaml"/>
+                <ResourceDictionary Source="Resources/English/RootLevelStrings.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </prism:PrismApplication.Resources>
+</prism:PrismApplication>
